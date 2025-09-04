@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>I'am Learning JS</h1>
+
+    <!-- Paragraph to update -->
+    <p id="demo">Hello Aitha Dinesh</p>
+
+    <!-- Image to toggle -->
+    <img id="toggleImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR2DgUIS8uITtF9lKVptYW-vP0_htCZguNvg&s" width="200">
+
+    <!-- Button to trigger function -->
+    <button type="button" onclick="fun()">Click me</button>
+
+    <script>
+        let flag = true;
+
+        function fun() {
+            if (flag) {
+                document.getElementById('demo').innerHTML = 'Hello DOM';
+                document.querySelector('img').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR2DgUIS8uITtF9lKVptYW-vP0_htCZguNvg&s";
+            } else {
+                document.getElementById('demo').innerHTML = 'Hello Amazon';
+                document.querySelector('img').src = "https://m.media-amazon.com/images/I/61YcNe+WQuL._UF1000,1000_QL80_.jpg";
+            }
+            flag = !flag;
+        }
+    </script>
+</body>
+</html>
+<!-- Ways of selecting dom objects
+getElementById
+name
+classname
+tag name
+query selector -->
